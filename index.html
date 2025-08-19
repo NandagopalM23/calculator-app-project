@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="./icons8-calculator.gif">
+</head>
+
+<body>
+  <div class="container-grid">
+    <div class="display-area">
+      <input type="text" class="input-box" placeholder="0" />
+    </div>
+    <!-- we can create and set custom attribute, here that attribute is data-btn -->
+    <button class="grid-item btn" id="ac" data-btn="AC">AC</button>
+    <button class="grid-item btn" id="del" data-btn="DEL">DEL</button>
+    <button class="grid-item btn" id="openbracket" data-btn="(">(</button>
+    <button class="grid-item btn" id="closebracket" data-btn=")">)</button>
+    <button class="grid-item btn" id="square" data-btn="^2">x&sup2;</button>
+    <button class="grid-item btn" id="cube" data-btn="^3">x&sup3;</button>
+    <button class="grid-item btn" id="square-root" data-btn="sqrt">&radic;</button>
+    <button class="grid-item btn" id="cube-root" data-btn="cbrt">&#8731;</button>
+    <button class="grid-item btn" id="seven" data-btn="7">7</button>
+    <button class="grid-item btn" id="eight" data-btn="8">8</button>
+    <button class="grid-item btn" id="nine" data-btn="9">9</button>
+    <button class="grid-item btn" id="addition" data-btn="+">+</button>
+    <button class="grid-item btn" id="four" data-btn="4">4</button>
+    <button class="grid-item btn" id="five" data-btn="5">5</button>
+    <button class="grid-item btn" id="six" data-btn="6">6</button>
+    <button class="grid-item btn" id="subtraction" data-btn="-">-</button>
+    <button class="grid-item btn" id="one" data-btn="1">1</button>
+    <button class="grid-item btn" id="two" data-btn="2">2</button>
+    <button class="grid-item btn" id="three" data-btn="3">3</button>
+    <button class="grid-item btn" id="multiplication" data-btn="*">*</button>
+    <button class="grid-item btn" id="zero" data-btn="0">0</button>
+    <button class="grid-item btn" id="decimal" data-btn=".">.</button>
+    <button class="grid-item btn" id="percentage" data-btn="%">%</button>
+    <button class="grid-item btn" id="division" data-btn="/">/</button>
+    <button class="grid-item" id="equal">=</button>
+  </div>
+  <script src="./script.js"></script>
+  <!-- using math.js from cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.6.0/math.js"></script>
+</body>
+
+</html>

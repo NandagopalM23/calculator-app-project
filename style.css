@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container-grid {
+  min-width: 80%;
+  max-width: 1300px;
+  min-height: 100vh;
+  height: auto;
+  display: grid;
+  /* place-self: center; place-self is used to align individual grid items only*/
+  margin: 0 auto;
+  border: 5px solid maroon;
+  grid-template: repeat(8, 1fr) / repeat(4, 1fr);
+  gap: 10px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid-item {
+  width: 80%;
+  color: rgb(211, 255, 0);
+  border: none;
+  margin: 0 auto 5% auto;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  background-color: blue;
+}
+
+.display-area {
+  width: 100%;
+  grid-column: 1/-1;
+  border-radius: 10px;
+}
+
+.input-box {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(0, 255, 28);
+  font-size: clamp(2.5rem, 3rem, 3.5rem);
+  text-align: right;
+  padding: 0 5% 0 3%;
+  caret-color: white;
+  color: fuchsia;
+}
+
+.input-box::placeholder {
+  color: rgb(241, 22, 22);
+}
+
+#equal {
+  grid-column: 1/-1;
+  width: 95%;
+  min-height: 15%;
+  background-color: fuchsia;
+}

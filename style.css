@@ -8,10 +8,26 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: black;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  height: auto;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.7rem;
+}
+
 .container-grid {
   min-width: 80%;
   max-width: 1300px;
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
   display: grid;
   /* place-self: center; place-self is used to align individual grid items only*/
@@ -22,6 +38,7 @@ html {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .grid-item {
